@@ -1,4 +1,5 @@
 <?php 
+	header('Access-Control-Allow-Origin: *');
 
 	// IF VALIDATION ERROR
 	if (isset($_POST["all_error_required"])){
