@@ -669,7 +669,7 @@
 	 
 	// 06.2 Countdown
 	//================================================================================
-	var theday = new Date(2017, 7, 19);	
+	var theday = new Date(2019, 6, 8);	
 	$('#countdown').countdown({until: theday, format: 'WDHMS'});
 	
 		 
