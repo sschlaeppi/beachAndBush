@@ -105,7 +105,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="taxi-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+         	labelContent: '<div id="taxi-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
        		labelAnchor: new google.maps.Point(35, 35),
        		labelClass: "labels" // the CSS class for the label
      		});
@@ -116,7 +116,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="restaurant-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+         	labelContent: '<div id="restaurant-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
        		labelAnchor: new google.maps.Point(35, 35),
        		labelClass: "labels" // the CSS class for the label
      		});
@@ -127,7 +127,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="shop-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+         	labelContent: '<div id="shop-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
        		labelAnchor: new google.maps.Point(35, 35),
        		labelClass: "labels" // the CSS class for the label
      		});
@@ -138,7 +138,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="park-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+         	labelContent: '<div id="park-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
        		labelAnchor: new google.maps.Point(35, 35),
        		labelClass: "labels" // the CSS class for the label
      		});	
@@ -149,7 +149,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="toy-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+         	labelContent: '<div id="toy-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
        		labelAnchor: new google.maps.Point(35, 35),
        		labelClass: "labels" // the CSS class for the label
      		});	
@@ -160,7 +160,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="coffee-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+         	labelContent: '<div id="coffee-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
        		labelAnchor: new google.maps.Point(35, 35),
        		labelClass: "labels" // the CSS class for the label
      		});			
@@ -171,7 +171,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="coffee-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+         	labelContent: '<div id="coffee-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-location-1"></i></div>',
        		labelAnchor: new google.maps.Point(35, 35),
        		labelClass: "labels" // the CSS class for the label
      		});
