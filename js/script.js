@@ -669,8 +669,16 @@
 	 
 	// 06.2 Countdown
 	//================================================================================
-	var theday = new Date(2017, 7, 19);	
-	$('#countdown').countdown({until: theday, format: 'WDHMS'});
+	var theday = new Date(2019, 6, 8); 
+
+	$('#countdown').countdown({
+		until: theday,
+		format: 'DHMS',
+		timezone: +60,
+		labels: ['Jahre', 'Monate', 'Wochen', 'Tage', 'Stunden', 'Minuten', 'Sekunden'],
+    labels1: ['Jahr', 'Monat', 'Woche', 'Tag', 'Stunde', 'Minute', 'Sekunde'],
+		expiryText: '<div class="over">Das warten hat endlich ein Ende!</div>'
+	});
 	
 		 
 	// 06.3 Gift Carousel
