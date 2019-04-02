@@ -17,7 +17,7 @@
   		var styles = [
     		{
       			stylers: [
-        			{ hue: "#f08080" },
+        			/*{ hue: "#D2B48C" },*/
         			{ saturation: -50 }
       			]
     		},{
@@ -45,9 +45,9 @@
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
   		var mapOptions = {
-    		zoom: 10,		
+    		zoom: 5,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(35.393933, -97.387230),
+    		center: new google.maps.LatLng(-16.260399, 39.879545),
   			zoomControl: true,
   			mapTypeControl: true,
   			//scaleControl: false,
@@ -88,135 +88,171 @@
 		
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
-		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.393933, -97.387230),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map, 
-         	labelContent: '<div id="wedding-marker" class="main-icon-wrapper"><div class="big-circle scale-animation"></div><div class="main-icon-text">Wedding</br>Location</div></div>',
-       		labelAnchor: new google.maps.Point(90, 90),
-       		labelClass: "labels" // the CSS class for the label
-     		});
-    
+		// var marker1 = new MarkerWithLabel({
+       	// 	position: new google.maps.LatLng(-17.931012, 25.829519),
+       	// 	draggable: false,
+       	// 	raiseOnDrag: false,
+       	// 	icon: ' ',
+       	// 	map: map, 
+        //  	labelContent: '<div id="wedding-marker" class="main-icon-wrapper"><div class="big-circle scale-animation"></div><div class="main-icon-text">Wedding</br>Location</div></div>',
+       	// 	labelAnchor: new google.maps.Point(90, 90),
+       	// 	labelClass: "labels" // the CSS class for the label
+     	// 	});
+	
+		 var labelLat = 20;
+		 var labelLng = 32;
+
 		var marker2 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.483442, -97.641289),
+       		position: new google.maps.LatLng(-17.931012, 25.829519),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="taxi-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-taxi"></i></div>',
-       		labelAnchor: new google.maps.Point(35, 35),
+         	labelContent: '<div id="taxi-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
        		labelClass: "labels" // the CSS class for the label
      		});
 			
 		var marker3 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.615287, -97.118065),
+       		position: new google.maps.LatLng(-17.793967, 25.232481),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="restaurant-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-food"></i></div>',
-       		labelAnchor: new google.maps.Point(35, 35),
+         	labelContent: '<div id="chobe-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
        		labelClass: "labels" // the CSS class for the label
      		});
 			
 		var marker4 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.492388, -96.961510),
+       		position: new google.maps.LatLng(-18.922013, 22.774572),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="shop-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-basket"></i></div>',
-       		labelAnchor: new google.maps.Point(35, 35),
+         	labelContent: '<div id="okavango-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
        		labelClass: "labels" // the CSS class for the label
      		});
 			
 		var marker5 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.257239, -97.015068),
+       		position: new google.maps.LatLng(-26.092536, 28.269839),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="park-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-tree"></i></div>',
-       		labelAnchor: new google.maps.Point(35, 35),
+         	labelContent: '<div id="johannesburg-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
        		labelClass: "labels" // the CSS class for the label
      		});	
 		
 		var marker6 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.146631, -97.325151),
+       		position: new google.maps.LatLng(-4.747089, 55.515515),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="toy-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-paper-plane"></i></div>',
-       		labelAnchor: new google.maps.Point(35, 35),
+         	labelContent: '<div id="mahe-marker-1" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
        		labelClass: "labels" // the CSS class for the label
      		});	
 			
 		var marker7 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.313289, -97.804710),
+       		position: new google.maps.LatLng(-4.310205, 55.736275),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="coffee-marker" class="de-icon circle medium-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#333333; font-size:24px;"><i class="de-icon-coffee"></i></div>',
-       		labelAnchor: new google.maps.Point(35, 35),
+         	labelContent: '<div id="praslin-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
        		labelClass: "labels" // the CSS class for the label
      		});			
-    	//marker.setMap( map );
+
+		var marker8 = new MarkerWithLabel({
+       		position: new google.maps.LatLng(-4.345116, 55.830303),
+       		draggable: false,
+       		raiseOnDrag: false,
+       		icon: ' ',
+       		map: map, 
+         	labelContent: '<div id="digue-marker" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
+       		labelClass: "labels" // the CSS class for the label
+			 });
+
+		var marker9 = new MarkerWithLabel({
+       		position: new google.maps.LatLng(-4.747089, 55.515515),
+       		draggable: false,
+       		raiseOnDrag: false,
+       		icon: ' ',
+       		map: map, 
+         	labelContent: '<div id="mahe-marker-2" class="de-icon circle small-size animation fadeIn" style="background-color:rgba(255, 255, 255, 0.8); color:#ce0a6c; font-size:24px;"><i class="de-icon-location-1"></i></div>',
+       		labelAnchor: new google.maps.Point(labelLat, labelLng),
+       		labelClass: "labels" // the CSS class for the label
+     		});	
+			 //marker.setMap( map );
 		
 		
 		//INFO WINDOWS
 		//=======================================================================================
-		var contentString1 = ''+
-		'<div class="info-window-wrapper">'+
-			'<h5>Wedding Ceremony</h5>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.<br/><a href="#" class="with-underline">Click Here</a></div>'+
-      	'</div>';
+		// var contentString1 = ''+
+		// '<div class="info-window-wrapper">'+
+		// 	'<h5>Wedding Ceremony</h5>'+
+		// 	'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.<br/><a href="#" class="with-underline">Click Here</a></div>'+
+      	// '</div>';
 		
 		var contentString2 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h5>Taxi Station</h5>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.</div>'+
+			'<h5>Victoria Falls</h5>'+
+			'<div class="info-window-desc">Cresta Sprayview Hotel</div>'+
       	'</div>';
 		
 		var contentString3 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h5>Delicious Cafe</h5>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.</div>'+
+			'<h5>Chobe Nationalpark River Front</h5>'+
+			'<div class="info-window-desc">River View Lodge</div>'+
       	'</div>';
 		
 		var contentString4 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h5>Shopping Market</h5>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.</div>'+
+			'<h5>Okavango Delta</h5>'+
+			'<div class="info-window-desc">Bushman Plains Camp</div>'+
       	'</div>';
 		
 		var contentString5 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h5>Green Park</h5>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.</div>'+
+			'<h5>Johannesburg</h5>'+
+			'<div class="info-window-desc">Safari Club SA</div>'+
       	'</div>';
 		
 		var contentString6 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h5>Kid Toy Station</h5>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.</div>'+
+			'<h5>Mahe Island</h5>'+
+			'<div class="info-window-desc">Le Nautique Luxury Beachfront Apartments</div>'+
       	'</div>';
 		
 		var contentString7 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h5>Coffee Shop</h5>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur.</div>'+
-      	'</div>';
+			'<h5>Praslin Island</h5>'+
+			'<div class="info-window-desc">Le Domaine De La Reserve</div>'+
+		  '</div>';
 
+		var contentString8 = ''+
+		'<div class="info-window-wrapper">'+
+			'<h5>La Digue Island</h5>'+
+			'<div class="info-window-desc">Le Domaine De l\'Orangeraie</div>'+
+		  '</div>';
 
- 	 	var marker1_infowindow = new google.maps.InfoWindow({
-      		content: contentString1,
-			maxWidth: 300,
-			pixelOffset: new google.maps.Size(0,-50)
-  		});		
+		  var contentString9 = ''+
+		  '<div class="info-window-wrapper">'+
+			  '<h5>Mahe Island</h5>'+
+			  '<div class="info-window-desc">Le Nautique Luxury Beachfront Apartments</div>'+
+			'</div>';
+
+ 	 	// var marker1_infowindow = new google.maps.InfoWindow({
+      	// 	content: contentString1,
+		// 	maxWidth: 300,
+		// 	pixelOffset: new google.maps.Size(0,-50)
+  		// });		
 		
 		var marker2_infowindow = new google.maps.InfoWindow({
       		content: contentString2,
@@ -253,19 +289,30 @@
 			maxWidth: 300,
 			pixelOffset: new google.maps.Size(0,0)
   		});		
+
+		  var marker8_infowindow = new google.maps.InfoWindow({
+			content: contentString8,
+		  maxWidth: 300,
+		  pixelOffset: new google.maps.Size(0,0)
+		});
 		
+		  var marker9_infowindow = new google.maps.InfoWindow({
+			content: contentString9,
+		  maxWidth: 300,
+		  pixelOffset: new google.maps.Size(0,0)
+		});
 		
 		
 		//OPEN INFO WINDOWS ON LOAD
 		//=======================================================================================
-  		marker1_infowindow.open(map,marker1);
+  		//marker1_infowindow.open(map,marker1);
 		
 
 		//ON MARKER CLICK EVENTS
 		//=======================================================================================		
-		google.maps.event.addListener(marker1, 'click', function() {
-			marker1_infowindow.open(map,marker1);		
-  		});
+		//google.maps.event.addListener(marker1, 'click', function() {
+		//	marker1_infowindow.open(map,marker1);		
+  		//});
 		
 		google.maps.event.addListener(marker2, 'click', function() {   	 	
 			marker2_infowindow.open(map,marker2);
@@ -291,8 +338,15 @@
 			marker7_infowindow.open(map,marker7);
   		});
 		
-		
-		//ON INFO WINDOW CLOSE CLICK EVENTS
+		google.maps.event.addListener(marker8, 'click', function() {   	 	
+			marker8_infowindow.open(map,marker8);
+  		});		
+
+		  google.maps.event.addListener(marker9, 'click', function() {   	 	
+			marker9_infowindow.open(map,marker9);
+  		});		  
+
+		  //ON INFO WINDOW CLOSE CLICK EVENTS
 		//=======================================================================================	
 		google.maps.event.addListener(marker3_infowindow, 'closeclick', function() {   	 	
 			window.setTimeout(function() {
@@ -313,6 +367,28 @@
 			}
 			is_windowresize=false;
 		});
+
+		//CONNECT MARKERS
+		//=======================================================================================
+		var markers = [
+			marker2.position,
+			marker3.position,
+			marker4.position,
+			marker5.position,
+			marker6.position,
+			marker7.position,
+			marker8.position,
+			marker9.position
+		  ];
+		  var route = new google.maps.Polyline({
+			path: markers,
+			geodesic: true,
+			strokeColor: '#ce0a6c',
+			strokeOpacity: 0.8,
+			strokeWeight: 3
+		  });
+		
+		  route.setMap(map);
 	}
 
 	// LOAD GMAP
