@@ -669,7 +669,7 @@
 	 
 	// 06.2 Countdown
 	//================================================================================
-	var theday = new Date(2019, 6, 8); 
+	var theday = new Date(2019, 5, 8); 
 
 	$('#countdown').countdown({
 		until: theday,
