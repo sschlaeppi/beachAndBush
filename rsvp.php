@@ -21,16 +21,16 @@
 			}
 		}
 	
-		$email_to  =  'su_lee12@hotmail.com'; 
+		$email_to  =  'welcome@beachandbush.ch';
 		
 		$headers = "From: ".$_POST["inputemail"]."\r\n";	
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";	
-		$subject = "RSVP message from Mr/Mrs ".$_POST["inputname"];	
+		$subject = "Beach & bush Fotoauswahl von ".$_POST["inputname"];	
 				
 		if(mail($email_to, $subject, $finalmessage, $headers)){
-        	$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
+        	$output = json_encode(array('type'=>'success', 'text' => 'Nachricht wurde versendet'));
     	}else{
-        	$output = json_encode(array('type'=>'error', 'text' => 'Failed'));
+        	$output = json_encode(array('type'=>'error', 'text' => 'Ein Fehler ist aufgetreten.'));
    		}		
 		die($output);	
 	}	
